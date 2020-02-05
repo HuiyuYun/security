@@ -1,0 +1,26 @@
+服务资源解析令牌每次都要调用远程服务，有损性能，因此JWT令牌应运而生。
+
+JWT ：Json、Web、Token
+    结构{
+        三部分，每部分中间用.分割，如xxx.yyy.zzz
+        ·Header{
+            头部：令牌类型、哈希算法（HMAC、SHA256或RSA）
+            如：{"alg":"HS256", "typ":"JWT"}
+            将上边的类容使用Base64Url编码，即可得到JWT的第一部分
+        }
+        ·Payload{
+            存放有效信息：如iss（签发者），exp（过期时间戳），sub（面向的用户），也可自定义字段
+            如：{"sub":"123456789", "name":"zhangsan", "admin":true}
+            将上边的类容使用Base64Url编码，即可得到JWT的第二部分
+        }
+        ·Signature{
+            签名：防止jwt内容被篡改
+            如：JMACSHA256(
+                base64UrlEncode(header)+"."+
+                base64UrlEncode(payload),
+                secret) //secret签名所使用的密钥
+        }
+    }
+
+普通令牌只存了个id，其余部分都存在授权服务器上。
+JWT存了所有东西。

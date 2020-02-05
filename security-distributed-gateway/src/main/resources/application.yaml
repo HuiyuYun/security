@@ -1,0 +1,23 @@
+server:
+  port: 10001
+
+spring:
+  application:
+    name: distrbuted-geteway
+  main:
+    allow-bean-definition-overriding: true
+zuul:
+  retryable: true
+  routes:
+    uaa-service:
+      path: /uaa/**
+      serviceId: uaa-service
+      stripPrefix: false
+    order-service:
+      path: /order/**
+      serviceId: order-service
+      stripPrefix: false
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/

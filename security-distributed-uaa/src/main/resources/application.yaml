@@ -1,0 +1,61 @@
+spring:
+  application:
+    name: uaa-service
+  main:
+    allow-bean-definition-overriding: true
+  http:
+    encoding:
+      enabled: true
+      charset: utf-8
+      force: true
+  freemarker:
+    enabled: true
+    suffix: .html
+    request-context-attribute: rc
+    content-type: text/html
+    charset: utf-8
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+# 数据库连接配置
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql:///yunhuiyu?characterEncoding=UTF-8&useSSL=true&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#端口号、上下文路径
+server:
+  port: 8081
+  tomcat:
+    remote-ip-header: x-forwarded-for
+    protocol-header: x-forwarded-proto
+  use-forward-headers: true
+  servlet:
+    context-path: /uaa
+#日志配置
+logging:
+  level:
+    root: debug
+    org:
+      springframework:
+        web: info
+        #启动信息去掉不需要的CONDITIONS EVALUATION REPORT
+        boot:
+          autoconfigure: ERROR
+# feign相关配置
+feign:
+  hystrix:
+    enabled: true
+  compression:
+    request:
+      enabled: true
+      mime-types[0]: text/xml
+      mime-types[1]: application/xml
+      mime-types[2]: application/json
+      min-request-size: 2048
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/

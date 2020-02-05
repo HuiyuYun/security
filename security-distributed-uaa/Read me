@@ -1,0 +1,22 @@
+授权服务配置总结：三大块
+
+1.首先，我们得知道客户端信息从哪读取（内存？数据库？） --> 客户端详情配置
+2.其次，颁发token。定义token的相关(1).endpoint，(2).token如何存取，以及(3).客户端支持哪些类型的token
+3.最后，对这些endpoint可以定义一些安全上的策略
+
+授权码模式：最安全的一种模式
+1. 资源拥有者打开客户端，客户端要求资源拥有者给予授权，重定向到授权服务器，重定向时会附加客户端的身份信息
+如：/uaa/oauth/authorize?client_id=c1&response_type=code&scope=all&redirect_uri=http://www.baidu.com
+跳转到指定的redirect_uri，获取code（该code只能使用一次）
+如：https://www.baidu.com/?code=PrbSfo
+2. 获取令牌/oauth/token?client_id=c1&client_secret=secret&grant_type=authorization_code&code=PrbSfo&redirect_uri=http://www.baidu.com
+
+简化模式：提交就返回令牌，无需认证（针对无服务器端的第三方单页面应用）
+如：/uaa/oauth/authorize?client_id=c1&response_type=token&scope=all&redirect_uri=http://www.baidu.com
+返回：https://www.baidu.com/#access_token=ec61fffe-794d-4f93-8910-dd17625a1aad&token_type=bearer&expires_in=6419
+
+密码模式：敏感信息泄露给client，因此client必须是自己开发的，值得信赖的
+如：/uaa/oauth/token?client_id=c1&client_secret=secret&grant_type=password&username=zhangsan&password=123
+
+客户端模式：仅用于内部系统
+如：/uaa/oauth/token?client_id=c1&client_secret=secret&grant_type=client_credentials

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0a2961b3-d12f-4972-bf0e-9806632e089e" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\open_source\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1X9a0qIgJhiQrUJqH624pp0sIR5" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../security-spring-security" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.yunhuiyu.security.distributed.order.model" />
+      <recent name="org.yunhuiyu.security.distributed.order.config" />
+      <recent name="org.yunhuiyu.security.distributed.uaa.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\open_source\IntelliJ IDEA 2019.2.4\WorkSpace\security-distributed\security-distributed-gateway\src\main\java\org\yunhuiyu\security\distributed\gateway" />
+      <recent name="D:\open_source\IntelliJ IDEA 2019.2.4\WorkSpace\security-distributed\security-distributed-uaa\src\main\java\org\yunhuiyu\security\distributed\uaa\config" />
+      <recent name="D:\open_source\IntelliJ IDEA 2019.2.4\WorkSpace\security-distributed\security-distributed-uaa\src\main\java\org\yunhuiyu\security\distributed\uaa" />
+      <recent name="D:\open_source\IntelliJ IDEA 2019.2.4\WorkSpace\security-distributed\security-distributed-order\src\main\java" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.OrderServiceApp">
+    <configuration name="AuthorizationServerConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.yunhuiyu.security.distributed.uaa.config.AuthorizationServerConfig" />
+      <module name="security-distributed-uaa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.yunhuiyu.security.distributed.uaa.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="security-distributed-Eureka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.yunhuiyu.security.distributed.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.yunhuiyu.security.distributed.eureka.EurekaServerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="security-distributed-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.yunhuiyu.security.distributed.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.yunhuiyu.security.distributed.gateway.GatewayServerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="security-distributed-order" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.yunhuiyu.security.distributed.order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.yunhuiyu.security.distributed.order.OrderServiceApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UAAServerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="security-distributed-uaa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.yunhuiyu.security.distributed.uaa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.yunhuiyu.security.distributed.uaa.UAAServerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.OrderServiceApp" />
+        <item itemvalue="Spring Boot.GatewayServerApp" />
+        <item itemvalue="Spring Boot.EurekaServerApp" />
+        <item itemvalue="Spring Boot.UAAServerApp" />
+        <item itemvalue="Application.AuthorizationServerConfig" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a2961b3-d12f-4972-bf0e-9806632e089e" name="Default Changelist" comment="" />
+      <created>1580460543408</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580460543408</updated>
+      <workItem from="1580460553679" duration="6318000" />
+      <workItem from="1580524106857" duration="11931000" />
+      <workItem from="1580610009201" duration="18940000" />
+      <workItem from="1580693787088" duration="13709000" />
+      <workItem from="1580807245886" duration="9778000" />
+      <workItem from="1580825696693" duration="7521000" />
+      <workItem from="1580896361286" duration="256000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/security-distributed-order/src/main/java/org/yunhuiyu/security/distributed/order/controller/OrderController.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
